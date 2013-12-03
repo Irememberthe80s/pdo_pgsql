@@ -37,7 +37,7 @@ Class Pdo_Pgsql extends Database_Pdo\Src\Database_Adapter
     * @param    array  $options Db Driver options
     * @return   void
     */
-    public function _connect()
+    public function connect()
     {
         // If connection is ok .. not need to again connect..
         if ($this->_conn) { return; }
